@@ -32,7 +32,7 @@ public class Main {
                 sc.nextLine();
             }
             catch(InputMismatchException e) {
-                
+
             }
         }
     }
