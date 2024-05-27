@@ -6,6 +6,7 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class King extends ChessPiece {
+
     public King(Board board, Color color) {
         super(board, color);
     }
@@ -24,7 +25,7 @@ public class King extends ChessPiece {
     public boolean[][] possibleMoves() {
         boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
 
-        Position p = new Position(0, 1);
+        Position p = new Position(0, 0);
 
         // above
         p.setValues(position.getRow() - 1, position.getColumn());
